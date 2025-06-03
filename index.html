@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>Winnie's Portfolio</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Rubik:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/education.css" />
+  <link rel="stylesheet" href="css/experiences.css" />
+  <link rel="stylesheet" href="css/projects.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/global.css" />
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+ 
+  <header class="site-header">
+    <div class="logo-container">
+      <img src="/images/mascot.png" alt="Mascot" class="first-logo" />
+      <img src="/images/name.png" alt="My Name" class="second-logo" />
+    </div>
+
+    <nav class="site-nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+ 
+<!-- main -->
+  <main>
+    <section id="home" class="hero-section">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">Winnie Lin</h1>
+          <p class="hero-subtitle">
+            Hello! I’m a CS major at Cornell COE.<br />
+            Based in New York, NY <br />
+          </p>
+          <!-- “Explore Projects” button -->
+          <a href="#projects" class="cta-button bounce-btn">Explore Projects</a>
+        </div>
+        <div class="hero-image">
+            <img src="/images/me1.png" alt="me1" />
+        </div>
+        </div>
+    </section>
+
+<!-- about -->
+    <section id="about" class="about-section">
+    <h2>About</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            <span class="highlight">Hello World</span>
+            I am currently a junior undergraduate driven by a passion for self-improvement. 
+            I enjoy collaborating with peers to tackle complex problems and build solutions 
+            that benefit others (and myself). Feel free to reach out!
+          </p>
+        </div>
+        <div class="about-image">
+          <div class="image-projects">
+            <img src="/images/me2.png" alt="me2" class="about-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- Education -->
+    <section id="education" class="education-section">
+    <h2>Education</h2>
+
+    <div class="education-card">
+        <div class="edu-content">
+        <h3>
+            <a href="https://www.cornell.edu/" target="_blank" rel="noopener">
+            Cornell University
+            </a>
+        </h3>
+        <p class="edu-degree">B.S. Computer Science</p>
+        <p class="edu-location">Ithaca, New York</p>
+        </div>
+        <div class="edu-date">Aug. 2023 – May 2027</div>
+    </div>
+
+    <div class="education-card">
+        <div class="edu-content">
+        <h3>
+            <a href="https://www.millenniumhs.org/" target="_blank" rel="noopener">
+            Millennium High School
+            </a>
+        </h3>
+        <p class="edu-location">Manhattan, New York</p>
+        </div>
+        <div class="edu-date">Sep. 2019 – Jun. 2023</div>
+    </div>
+    </section>
+
+<!-- experience -->
+    <section id="experience" class="timeline-section">
+    <h2>Experience</h2>
+    <section class="timeline">>
+    <div class="timeline-item">
+      <div class="timeline-img"></div>
+      <div class="timeline-content js--fadeInLeft">
+        <h2>WIX Developer for SYEP</h2>
+        <p class="timeline-meta">Summer 2024 · Ithaca, NY</p>
+        <p class="timeline-desc">
+          I led a team of three to design a WIX website for an English professor.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-img"></div>
+        <div class="timeline-content js--fadeInRight">
+            <h2>iGEM Wiki &amp; Design Subteam Member</h2>
+            <p class="timeline-meta"> Oct. 2023 – Present · Ithaca, NY</p>
+            <p class="timeline-desc">
+            Used HTML, CSS, JavaScript, Figma, and Adobe to design the iGEM annual competition website.
+            Based on each year’s theme, our team would build a sub‐game alongside the iGEM site, focusing on back‐end.
+            </p>
+        </div>
+        </div>
+    </section>
+    </section>
+  
+
+
+<!-- Projects -->
+    <section id="projects" class="projects-section">
+      <h2>Projects</h2>
+    
+      <p>…your content here…</p>
+    </section>
+
+<!-- Contact -->
+<section id="contact" class="contact-section">
+  <h2>Contact</h2>
+  <p>Feel free to reach out to me.</p>
+
+  <div class="contact-links">
+
+    <a
+      href="https://www.linkedin.com/in/llinwinnie/"
+      target="_blank"
+      rel="noopener"
+      class="contact-link"
+    >
+      <div class="icon-wrapper">
+        <img
+          src="images/icons/linkedin.png"
+          alt="LinkedIn"
+          class="contact-icon"
+        />
+      </div>
+      <span class="visually-hidden">LinkedIn</span>
+    </a>
+
+    <a href="mailto:wl686@cornell.edu" class="contact-link">
+      <div class="icon-wrapper">
+        <img src="images/icons/gmail.png" alt="Gmail" class="contact-icon" />
+      </div>
+      <span class="visually-hidden">Email</span>
+    </a>
+
+    <a href="https://github.com/llinwinnie" target="_blank" rel="noopener" class="contact-link">
+      <div class="icon-wrapper">
+        <img src="images/icons/github.png" alt="GitHub" class="contact-icon" />
+      </div>
+      <span class="visually-hidden">GitHub</span>
+    </a>
+  </div>
+</section>
+
+  </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
