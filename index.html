@@ -38,6 +38,12 @@
       <img src="/images/name.png" alt="My Name" class="second-logo" />
     </div>
 
+    <button class="hamburger" aria-label="Toggle navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
     <nav class="site-nav">
       <ul>
         <li><a href="#home">Home</a></li>
@@ -164,33 +170,50 @@
     <div class="contact-left">
       <h2>Contact</h2>
        
-      <form class="contact-form" action="#" method="post">
+      <form class="contact-form" id="contactForm">
         <div class="contact-row">
           <div class="contact-field">
-            <label for="first-name">First name</label>
-            <input type="text" id="first-name" name="first-name" />
+            <label for="first-name">First name *</label>
+            <input type="text" id="first-name" name="first-name" required />
+            <span class="error-message" id="firstNameError"></span>
           </div>
           <div class="contact-field">
-            <label for="last-name">Last name</label>
-            <input type="text" id="last-name" name="last-name" />
+            <label for="last-name">Last name *</label>
+            <input type="text" id="last-name" name="last-name" required />
+            <span class="error-message" id="lastNameError"></span>
           </div>
         </div>
          
         <div class="contact-row">
           <div class="contact-field full-width">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" />
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required />
+            <span class="error-message" id="emailError"></span>
           </div>
         </div>
          
         <div class="contact-row">
           <div class="contact-field full-width">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="6"></textarea>
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+            <span class="error-message" id="messageError"></span>
           </div>
         </div>
          
-        <button type="submit" class="btn-submit">Let's talk</button>
+        <button type="submit" class="btn-submit" id="submitBtn">
+          <span class="btn-text">Let's talk</span>
+          <span class="btn-loading" style="display: none;">Sending...</span>
+        </button>
+        
+        <div class="form-message" id="formMessage"></div>
+        
+        <!-- Alternative: Simple mailto link -->
+        <div class="mailto-alternative" style="margin-top: 20px; text-align: center;">
+          <p style="color: #666; font-size: 0.9rem;">Or simply email me directly:</p>
+          <a href="mailto:llin.winnie@gmail.com?subject=Portfolio Contact" class="btn-submit" style="display: inline-block; text-decoration: none; margin-top: 10px;">
+            Send Email Directly
+          </a>
+        </div>
       </form>
     </div>
      
@@ -247,6 +270,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script src="https://unpkg.com/scrollreveal"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
     <script src="main.js"></script>
 
